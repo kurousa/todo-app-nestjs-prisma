@@ -1,0 +1,24 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Todo {
+  id: Int!
+  title: String!
+  content: String
+  status: Boolean
+  author: User
+  authorId: Int
+}
+
+type User {
+  id: Int!
+  email: String!
+  name: String
+  todos: Todo!
+}
+
+type Query {
+  users: [User!]!
+  todos: [Todo!]!
+}
